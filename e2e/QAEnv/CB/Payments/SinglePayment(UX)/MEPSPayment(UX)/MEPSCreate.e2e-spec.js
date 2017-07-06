@@ -19,7 +19,7 @@ describe('Create a MEPS Payment through Single Payment UX',function () {
     loginPage.login245Env(parameterPage.CBCompanyId1,parameterPage.CBUser1);
     /*to Single Payment UX page*/
     navigationPage.toSinglePaymentUXPage();
-    /*enter fields to create Telegraphic Transfer UX*/
+    /*enter fields to create MEPS Payment UX*/
     mepsPaymentUXPage.createMEPSUX();
 
   });

@@ -41,6 +41,18 @@ var SinglePaymentUXPage = function () {
     browser.wait(EC.elementToBeClickable(bankCharges),30000);
     bankCharges.click();
   };
+  this.selectPurposeCode = function () {
+    /*Select a purpose code*/
+    var purposeCode = element(by.css('multi-level-dropdown[formcontrolname=purposeCode]'));
+    browser.wait(EC.elementToBeClickable(purposeCode),60000);
+    purposeCode.click();
+    var purposeCodeLevel1 = element.all(by.css('.search-result')).first();
+    browser.wait(EC.elementToBeClickable(purposeCodeLevel1),60000);
+    purposeCodeLevel1.click();
+    var purposeCodeLevel2 = element.all(by.css('.search-result')).first();
+    browser.wait(EC.elementToBeClickable(purposeCodeLevel2),60000);
+    purposeCodeLevel2.click();
+  };
   this.clickSaveBtn = function () {
     /*click button to preview page*/
     var saveBtn = element(by.buttonText('Save as draft'));

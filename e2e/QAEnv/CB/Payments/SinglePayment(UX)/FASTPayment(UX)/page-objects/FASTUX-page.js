@@ -36,17 +36,5 @@ var FASTPaymentUXPage = function () {
     browser.wait(EC.elementToBeClickable(accountNumber),30000);
     accountNumber.click();
   };
-  this.selectPurposeCode = function () {
-    /*Select a purpose code*/
-    var purposeCode = element(by.css('multi-level-dropdown[formcontrolname=purposeCode]'));
-    browser.wait(EC.elementToBeClickable(purposeCode),60000);
-    purposeCode.click();
-    var purposeCodeLevel1 = element.all(by.css('.search-result')).firs();
-    browser.wait(EC.elementToBeClickable(purposeCodeLevel1),60000);
-    purposeCodeLevel1.click();
-    var purposeCodeLevel2 = element.all(by.css('.search-result')).firs();
-    browser.wait(EC.elementToBeClickable(purposeCodeLevel2),60000);
-    purposeCodeLevel2.click();
-  };
 };
 module.exports = FASTPaymentUXPage;

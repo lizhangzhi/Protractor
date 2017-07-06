@@ -15,7 +15,7 @@ exports.config = {
   // specs:['./QAEnv/CB/Payments/SinglePayment(UX)/AccountTransfer(UX)/SG/ACTCreate.e2e-spec.js'],
   // specs:['./QAEnv/CB/Payments/SinglePayment(UX)/TelegraphicTransfer(UX)/SG/TTSave.e2e-spec.js']s
   // specs:['./QAEnv/CB/Payments/SinglePayment(UX)/FASTPayment(UX)/FASTCreate.e2e-spec.js'],
-  specs:['./QAEnv/CB/Payments/SinglePayment(UX)/MEPSPayment(UX)/MEPSCreate.e2e-spec.js'],
+  specs:['./QAEnv/CB/Payments/SinglePayment(UX)/GIROPayment(UX)/GIROCreate.e2e-spec.js'],
   // suites:{
   //   search:[
   //     // './QAEnv/CB/Payments/TelegraphicTransfer/SG/*.e2e-spec.js',

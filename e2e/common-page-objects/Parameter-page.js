@@ -4,7 +4,7 @@
 var ParameterPage = function () {
   /*CB User*/
   this.CBCompanyId1 = 'SG2BFE1';
-  this.CBUser1 = 'SG2BFE1S03';
+  this.CBUser1 = 'SG2BFE1S05';
   this.CBUser2 = 'SG2BFE1S04';
   /*Payments*/
   this.amount = '10';
