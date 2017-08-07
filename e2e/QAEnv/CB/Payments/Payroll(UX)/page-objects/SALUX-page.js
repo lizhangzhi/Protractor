@@ -13,7 +13,7 @@ var PayrollUXPage = function () {
     this.waitingForPayeeLoad();
     this.selectFromAccount();
     this.selectBeneficiary();
-    this.enterAmount();
+    this.enterAmount(parameterPage.amount);
     this.clickNextBtn();
     this.clickSubmitBtn();
   };
@@ -32,7 +32,7 @@ var PayrollUXPage = function () {
     var fromAccount = element(by.id('tally-city'));
     browser.wait(EC.elementToBeClickable(fromAccount),30000);
     fromAccount.click();
-    var accountNumber = element(by.cssContainingText('.search-result','LEONA ALBRECHT 0018001843 (SGD)'));
+    var accountNumber = element(by.cssContainingText('.search-result',parameterPage.fromAccount1));
     browser.wait(EC.elementToBeClickable(accountNumber),30000);
     accountNumber.click();
   };
@@ -44,10 +44,8 @@ var PayrollUXPage = function () {
   };
   this.enterAmount = function (value) {
     browser.wait(EC.presenceOf(element(by.css('.addPayee'))), 30000);
-    // browser.sleep(1000);
     /*enter amount*/
-    var amount = element(by.css('dbs-input[formcontrolname=payeeAmount]'))
-                    .element(by.tagName('input'));
+    var amount = element(by.css('dbs-input[formcontrolname=payeeAmount]')).element(by.tagName('input'));
     browser.wait(EC.visibilityOf(amount),30000);
     amount.sendKeys(value);
   };
@@ -59,7 +57,7 @@ var PayrollUXPage = function () {
   };
   this.clickSubmitBtn = function () {
     /*click button to submit */
-    browser.wait(EC.textToBePresentInElement(element(by.css('.form-section-header')), 'Preview payroll payment'), 30000);
+    browser.wait(EC.textToBePresentInElement(element.all(by.css('.form-section-header')).first(), 'Preview payroll payment'), 30000);
     var submitButton = element(by.buttonText('Submit'));
     browser.wait(EC.elementToBeClickable(submitButton),30000);
     submitButton.click();

@@ -9,19 +9,23 @@ exports.config = {
   // restartBrowserBetweenTests: true,
   // specs:['./QAEnv/SAM/User/UserApprove.e2e-spec.js'],
   // specs:['./QAEnv/SAM/User/UserCreate.e2e-spec.js'],
-  // specs:['./QAEnv/CB/Payments/TelegraphicTransfer/SG/TTCreate.e2e-spec.js'],
-  // specs:['./QAEnv/CB/Payments/TelegraphicTransfer(UX)/SGTTCreate.e2e-spec.js'],
-  // specs:['./QAEnv/CB/Payments/Payroll(UX)/SG/SALUXCreate.e2e-spec.js'],
+  specs:['./QAEnv/CB/Payments/TelegraphicTransfer/SG/TTCreate.e2e-spec.js'],
+  // specs:['./QAEnv/CB/Payments/TelegraphicTransfer(UX)/SG/SGTTSave.e2e-spec.js'],
+  // specs:['./QAEnv/CB/Payments/BulkCollection(UX)/SG/COLUXCreate.e2e-spec.js'],
   // specs:['./QAEnv/CB/Payments/SinglePayment(UX)/AccountTransfer(UX)/SG/ACTCreate.e2e-spec.js'],
   // specs:['./QAEnv/CB/Payments/SinglePayment(UX)/TelegraphicTransfer(UX)/SG/TTSave.e2e-spec.js']s
   // specs:['./QAEnv/CB/Payments/SinglePayment(UX)/FASTPayment(UX)/FASTCreate.e2e-spec.js'],
-  specs:['./QAEnv/CB/Payments/SinglePayment(UX)/GIROPayment(UX)/GIROCreate.e2e-spec.js'],
   // suites:{
   //   search:[
-  //     // './QAEnv/CB/Payments/TelegraphicTransfer/SG/*.e2e-spec.js',
-  //   // './QAEnv/CB/Payments/TelegraphicTransfer(UX)/*.e2e-spec.js',
-  //   './QAEnv/SAM/User/*.e2e-spec.js'
-  //     // './QAEnv/SAM/Operations/*/*.e2e-spec.js'
+  //     // './QAEnv/SAM/Operations/*/*.e2e-spec.js',
+  //     // './QAEnv/SAM/PanelAuthorization/*.e2e-spec.js'
+  //     // './QAEnv/SAM/User/*.e2e-spec.js'
+  //     './QAEnv/CB/Payments/BulkCollection(UX)/SG/*.e2e-spec.js',
+  //     './QAEnv/CB/Payments/Payroll(UX)/SG/*.e2e-spec.js',
+  //     './QAEnv/CB/Payments/SinglePayment(UX)/*/*/*.e2e-spec.js',
+  //     './QAEnv/CB/Payments/SinglePayment(UX)/*/*.e2e-spec.js',
+  //     './QAEnv/CB/Payments/TelegraphicTransfer/SG/*.e2e-spec.js',
+  //     './QAEnv/CB/Payments/TelegraphicTransfer(UX)/SG/*.e2e-spec.js'
   //   ]
   // },
   capabilities: {

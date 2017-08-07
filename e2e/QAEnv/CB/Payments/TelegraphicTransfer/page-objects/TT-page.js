@@ -97,7 +97,8 @@ var TelegraphicTransferPage = function () {
       /*click button to preview page*/
       var previewBtn = element(by.id('previewButton_Link'));
       browser.wait(EC.elementToBeClickable(previewBtn),30000);
-      previewBtn.click();
+      browser.executeScript("arguments[0].click();", previewBtn.getWebElement());
+      // previewBtn.click();
     };
     this.clickSubmitBtn = function () {
       /*click button to submit */

@@ -9,7 +9,7 @@ var NavigationPage = function () {
       "style='opacity:1; margin-left: 0; width:320px;'");
     browser.sleep(1000);
     element(by.linkText('Make a payment [New]')).click();
-    browser.sleep(5000);
+    browser.sleep(10000);
   };
   /*open Telegraphic Transfer menu*/
   this.toCreateTTPage = function () {
@@ -25,7 +25,7 @@ var NavigationPage = function () {
       "style='opacity:1; margin-left: 0; width:320px;'");
     browser.sleep(1000);
     element(by.linkText('Telegraphic Transfer [New]')).click();
-    browser.sleep(5000);
+    browser.sleep(10000);
   };
   /*open Bulk Collection UX menu*/
   this.toCreateCOLUXPage = function () {
@@ -33,7 +33,7 @@ var NavigationPage = function () {
       "style='opacity:1; margin-left: 0; width:320px;'");
     browser.sleep(1000);
     element(by.linkText('Bulk Collection [New]')).click();
-    browser.sleep(5000);
+    browser.sleep(10000);
   };
   /*open Payroll UX menu*/
   this.toCreateSALUXPage = function () {
@@ -41,7 +41,7 @@ var NavigationPage = function () {
       "style='opacity:1; margin-left: 0; width:320px;'");
     browser.sleep(1000);
     element(by.linkText('Payroll [New]')).click();
-    browser.sleep(5000);
+    browser.sleep(10000);
   };
   /*open Transfer Center menu*/
   this.toTransferCenterPage = function () {

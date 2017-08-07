@@ -21,10 +21,10 @@ describe('Create a SG Bulk Collection UX',function () {
     navigationPage.toCreateCOLUXPage();
     /*enter fields to create Bulk Collection UX*/
     bulkCollectionUXPage.createSGBulkCollectionUX();
-    browser.sleep(5000);
   });
   it('Create a SG Bulk Collection UX',function () {
-
-
+    var header = element.all(by.css('.form-section-header')).first();
+    browser.wait(EC.textToBePresentInElement(header,'Your bulk collection has been submitted'),30000);
+    expect(header.getText()).toEqual('Your bulk collection has been submitted');
   });
 });

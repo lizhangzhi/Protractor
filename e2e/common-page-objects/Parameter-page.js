@@ -10,11 +10,14 @@ var ParameterPage = function () {
   this.amount = '10';
   this.fromAccount1 = 'LEONA ALBRECHT 0018001843 (SGD)';
   this.paymentdetails = 'Payment details to the payee bank';
+  this.paymentdetailsCopy = 'This transaction copied from existing transaction';
+  this.paymentdetailsModify = 'This transaction had been modified';
   this.invoiceDetails = 'Invoice Details';
   this.clientReference = 'Client Reference';
   this.insToDBS = 'Instruction to DBS Bank';
   this.transactionNote = 'Transaction Notes';
   this.responseCode = '1234';
+  this.rejectReason = 'reject for fun';
   /*SG Account Transfer Payee*/
   this.ACTbeneficiary = 'ACTBENEDONDELETE';
   /*SG Telegraphic Transfer Payee*/

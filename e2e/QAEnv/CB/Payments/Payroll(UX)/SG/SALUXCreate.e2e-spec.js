@@ -25,7 +25,7 @@ describe('Create a SG Payroll UX',function () {
   });
   it('Create a SG Payroll UX',function () {
     var header = element.all(by.css('.form-section-header')).first();
-    browser.wait(EC.textToBePresentInElement(header,'Your transfer has been submitted'),30000);
-    expect(header.getText()).toEqual('Your transfer has been submitted');
+    browser.wait(EC.textToBePresentInElement(header,'Your payroll payment has been submitted'),30000);
+    expect(header.getText()).toEqual('Your payroll payment has been submitted');
   });
 });
